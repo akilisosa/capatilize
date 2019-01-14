@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>capitalize the first letters in a string</title>
+    </head>
+<body>
+
+<p>Click the button to demonstrate the new javascript function.</p>
+
+<button onclick="myFunction()">capitalizing stuff</button>
+<div></div>
+<p id="demo"></p>
+<ul id="myList">
+    
+</ul>
+
+<script>
+function myFunction() {
+
+// If the <ul> element has any child nodes, remove its first child node
+        
+
+  let person = alert("this time we are going to capatlize the first letter");
+
+  let sentence = prompt("write anything you want");
+
+  
+  let firstletter = sentence[0].toUpperCase();
+  let restofsentence = sentence.slice(1);
+
+
+  
+
+  let node = document.createElement("LI");                 // Create a <li> node
+  let textnode = document.createTextNode(`new improved sentence: ${firstletter}${restofsentence}`);         // Create a text node
+        node.appendChild(textnode);                              // Append the text to <li>
+        document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
+
+
+
+
+
+
+  
+    
+  
+
+
+}
+
+
+</script>
+
+</body>
+</html>
